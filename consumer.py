@@ -81,8 +81,9 @@ class BatchConsumer:
         
         # Close all video writers
         if self.visualize_mode == 'save':
-            for writer in self.video_writers.values():
+            for camera_id, writer in self.video_writers.items():
                 writer.release()
+                logger.info(f"Closed video writer for camera: {camera_id}")
             logger.info("All video writers closed")
         
         # Close all OpenCV windows
@@ -227,25 +228,37 @@ class BatchConsumer:
         """Display frame in OpenCV window"""
         cv2.imshow(camera_name, frame)
     
-    def _save_frame_to_video(self, frame, camera_id, camera_name):
-        """Save frame to video file"""
-        # Initialize video writer for this camera if not exists
+    def _initialize_video_writer(self, camera_id, camera_name, frame_shape):
+        """Initialize video writer for a camera if not exists"""
         if camera_id not in self.video_writers:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"{camera_id}_{camera_name.replace(' ', '_')}_{timestamp}.mp4"
             filepath = os.path.join(self.output_dir, filename)
             
             # Get video properties
-            height, width = frame.shape[:2]
+            height, width = frame_shape[:2]
             fps = self.video_config.get('fps', 30)
             codec = self.video_config.get('codec', 'mp4v')
             fourcc = cv2.VideoWriter_fourcc(*codec)
             
             # Create video writer
             writer = cv2.VideoWriter(filepath, fourcc, fps, (width, height))
-            self.video_writers[camera_id] = writer
             
+            if not writer.isOpened():
+                logger.error(f"Failed to create video writer for {camera_name}: {filepath}")
+                return False
+            
+            self.video_writers[camera_id] = writer
             logger.info(f"Created video writer for {camera_name}: {filepath}")
+            return True
+        
+        return True
+    
+    def _save_frame_to_video(self, frame, camera_id, camera_name):
+        """Save frame to video file"""
+        # Initialize video writer if needed
+        if not self._initialize_video_writer(camera_id, camera_name, frame.shape):
+            return
         
         # Write frame
         self.video_writers[camera_id].write(frame)
@@ -341,26 +354,26 @@ class BatchConsumer:
                           f"Final: {len(final_detections)}")
                 
                 for det in final_detections:
-                    logger.info(f"  ✓ {det['class']}: {det['confidence']:.2f} at {det['bbox']}")
+                    logger.info(f"  -> {det['class']}: {det['confidence']:.2f} at {det['bbox']}")
             
-            # Visualize if enabled
-            if self.visualize_mode:
-                # Resize original frame to model input size for consistent visualization
-                display_frame = cv2.resize(original_frame, self.model_input_size)
-                
-                # Draw detections on frame
-                annotated_frame = self._visualize_detections(
-                    display_frame, 
-                    final_detections, 
-                    metadata['camera_name'],
-                    metadata['roi_config']
-                )
-                
-                # Display or save based on mode
-                if self.visualize_mode == 'display':
-                    self._display_frame(annotated_frame, metadata['camera_name'])
-                elif self.visualize_mode == 'save':
-                    self._save_frame_to_video(annotated_frame, metadata['camera_id'], metadata['camera_name'])
+            # Prepare frame for visualization/saving
+            # Resize original frame to model input size for consistent visualization
+            display_frame = cv2.resize(original_frame, self.model_input_size)
+            
+            # Draw detections and ROI on frame (even if no detections)
+            annotated_frame = self._visualize_detections(
+                display_frame, 
+                final_detections, 
+                metadata['camera_name'],
+                metadata['roi_config']
+            )
+            
+            # Handle visualization based on mode
+            if self.visualize_mode == 'display':
+                self._display_frame(annotated_frame, metadata['camera_name'])
+            elif self.visualize_mode == 'save':
+                # ALWAYS save frames when in save mode, regardless of detections
+                self._save_frame_to_video(annotated_frame, metadata['camera_id'], metadata['camera_name'])
             
             # Send filtered results to downstream system
             self._send_results(metadata, final_detections, {

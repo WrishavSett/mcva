@@ -8,8 +8,50 @@ from producer import FrameProducer
 from consumer import BatchConsumer
 import logging
 import threading
+from datetime import datetime
 
-logging.basicConfig(level=logging.INFO)
+# Setup logging to both file and console
+def setup_logging():
+    """Configure logging to write to both file and console"""
+    os.makedirs("logs", exist_ok=True)
+    
+    # Create timestamp for log file
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = os.path.join("logs", f"analytics_{timestamp}.log")
+    
+    # Create formatters
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+    
+    # Get root logger
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.INFO)
+    
+    # Remove existing handlers
+    root_logger.handlers = []
+    
+    # Console handler with UTF-8 encoding for Windows compatibility
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(formatter)
+    
+    # Force UTF-8 encoding for console output on Windows
+    if sys.platform == 'win32':
+        import codecs
+        sys.stdout.reconfigure(encoding='utf-8')
+    
+    root_logger.addHandler(console_handler)
+    
+    # File handler with UTF-8 encoding
+    file_handler = logging.FileHandler(log_file, encoding='utf-8')
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(formatter)
+    root_logger.addHandler(file_handler)
+    
+    return log_file
+
 logger = logging.getLogger(__name__)
 
 class MultiCameraAnalytics:
@@ -35,20 +77,6 @@ class MultiCameraAnalytics:
         signal.signal(signal.SIGINT, self._signal_handler)
         signal.signal(signal.SIGTERM, self._signal_handler)
         
-        # try:
-        #     # Start producer
-        #     self.producer.start()
-        #     time.sleep(2)  # Give cameras time to initialize
-            
-        #     # Start consumer
-        #     self.running = True
-        #     logger.info("System started successfully - Processing frames with ROI and class constraints")
-        #     self.consumer.start(self.producer)
-            
-        # except Exception as e:
-        #     logger.error(f"Error starting system: {e}")
-        #     self.stop()
-        
         logger.info("Starting Producer.")
         self.producer.start()
 
@@ -65,19 +93,6 @@ class MultiCameraAnalytics:
         self.producer.stop()
         logger.info("Pipeline stopped cleanly.")
     
-    # def stop(self):
-    #     """Stop the analytics system"""
-    #     logger.info("Shutting down system...")
-    #     self.running = False
-        
-    #     if hasattr(self, 'consumer'):
-    #         self.consumer.stop()
-        
-    #     if hasattr(self, 'producer'):
-    #         self.producer.stop()
-        
-    #     logger.info("System shutdown complete")
-    
     def _signal_handler(self, signum, frame):
         if self.running:
             logger.info(f"Signal {signum} received. Stopping...")
@@ -89,6 +104,11 @@ class MultiCameraAnalytics:
         logger.info(f"Frame queue size: {queue_size}")
 
 def main():
+    # Setup logging first (before any other operations)
+    log_file = setup_logging()
+    logger.info(f"Logging to file: {log_file}")
+    logger.info(f"Logging to console: enabled")
+    
     # Setup argument parser
     parser = argparse.ArgumentParser(
         description='Multi-Camera Video Analytics System',
@@ -128,13 +148,6 @@ Examples:
     
     # Initialize and start the system
     app = MultiCameraAnalytics(visualize_mode=visualize_mode)
-    
-    # try:
-    #     app.start()
-    # except KeyboardInterrupt:
-    #     logger.info("Keyboard interrupt received")
-    #     app.stop()
-
     app.start()
 
 if __name__ == "__main__":

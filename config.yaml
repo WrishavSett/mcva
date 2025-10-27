@@ -5,7 +5,7 @@ cameras:
     roi:
       enabled: false
       coordinates: []
-    classes_to_detect: ["car"]
+    classes_to_detect: ["person"]
   
   camera_2:
     rtsp_url: "rtsp://Localhost:18554/mystream"
@@ -13,7 +13,7 @@ cameras:
     roi:
       enabled: false
       coordinates: []
-    classes_to_detect: ["car"]
+    classes_to_detect: ["person"]
     
   # camera_3:
   #   rtsp_url: "rtsp://admin:password@192.168.1.102:554/stream1"
