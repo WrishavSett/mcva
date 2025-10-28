@@ -34,7 +34,7 @@ cameras:
 # Batch processing settings
 batch_size: 2
 batch_timeout: 0.25
-target_fps: 12
+target_fps: 8
 frame_queue_size: 100
 
 # Model settings
@@ -57,5 +57,5 @@ visualization:
 # Video saving settings
 video_save:
   codec: "mp4v"  # or "XVID", "MJPG"
-  fps: 30
+  fps: 8
   output_dir: "./output_videos"
