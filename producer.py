@@ -33,8 +33,8 @@ class FrameProducer:
             self.capture_threads[camera_id] = thread
             thread.start()
             
-            classes_info = "all classes" if not camera_config['classes_to_detect'] else str(camera_config['classes_to_detect'])
-            logger.info(f"Started capture for {camera_config['name']} - ROI: {camera_config['roi']['enabled']}, Classes: {classes_info}")
+            classes_info = "all classes" if not camera_config['classes_to_count'] else str(camera_config['classes_to_count'])
+            logger.info(f"Started capture for {camera_config['name']} - Counting Line: {camera_config['counting_line']['enabled']}, Classes: {classes_info}")
     
     def stop(self):
         """Stop all capture threads"""
@@ -51,41 +51,10 @@ class FrameProducer:
         
         logger.info("All cameras stopped")
     
-    def _create_roi_mask(self, roi_coordinates, frame_shape):
-        """Create a binary mask from ROI coordinates"""
-        mask = np.zeros((frame_shape[0], frame_shape[1]), dtype=np.uint8)
-        
-        # Convert coordinates to numpy array
-        roi_points = np.array(roi_coordinates, dtype=np.int32)
-        
-        # Fill the polygon defined by ROI coordinates
-        cv2.fillPoly(mask, [roi_points], 255)
-        
-        return mask
-    
-    def _apply_roi_to_frame(self, frame, roi_config):
-        """Apply ROI mask to frame - zero out areas outside ROI"""
-        if not roi_config['enabled'] or not roi_config['coordinates']:
-            return frame  # Return original frame if ROI is disabled
-        
-        # Create mask
-        mask = self._create_roi_mask(roi_config['coordinates'], frame.shape)
-        
-        # Apply mask to frame
-        roi_frame = frame.copy()
-        roi_frame[mask == 0] = 0  # Set non-ROI areas to black
-        
-        return roi_frame
-    
-    def _preprocess_frame(self, frame, camera_config):
-        """Preprocess frame: resize and apply ROI"""
-        # Resize frame to model input size
+    def _preprocess_frame(self, frame):
+        """Preprocess frame: resize to model input size"""
         resized_frame = cv2.resize(frame, self.model_input_size)
-        
-        # Apply ROI if enabled
-        processed_frame = self._apply_roi_to_frame(resized_frame, camera_config['roi'])
-        
-        return processed_frame
+        return resized_frame
     
     def _capture_frames(self, camera_id, camera_config):
         """Capture frames from a single camera"""
@@ -102,8 +71,8 @@ class FrameProducer:
         frame_interval = 1.0 / self.config['target_fps']
         last_time = time.time()
         
-        logger.info(f"Camera {camera_id} - ROI: {camera_config['roi']['enabled']}, "
-                   f"Classes: {camera_config['classes_to_detect'] if camera_config['classes_to_detect'] else 'all'}")
+        logger.info(f"Camera {camera_id} - Counting Line: {camera_config['counting_line']['enabled']}, "
+                   f"Classes: {camera_config['classes_to_count'] if camera_config['classes_to_count'] else 'all'}")
         
         try:
             while self.running.is_set():
@@ -117,16 +86,16 @@ class FrameProducer:
                 
                 # Frame rate control
                 if current_time - last_time >= frame_interval:
-                    # Preprocess frame (resize + ROI)
-                    processed_frame = self._preprocess_frame(frame, camera_config)
+                    # Preprocess frame (resize only, no ROI masking for counting)
+                    processed_frame = self._preprocess_frame(frame)
                     
                     frame_data = {
                         'camera_id': camera_id,
                         'camera_name': camera_config['name'],
                         'frame': processed_frame,
                         'original_frame': frame,
-                        'roi_config': camera_config['roi'],
-                        'classes_to_detect': camera_config['classes_to_detect'],
+                        'counting_line': camera_config['counting_line'],
+                        'classes_to_count': camera_config['classes_to_count'],
                         'timestamp': current_time
                     }
                     
