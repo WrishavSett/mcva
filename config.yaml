@@ -2,34 +2,18 @@ cameras:
   camera_1:
     rtsp_url: "rtsp://Localhost:18554/mystream"
     name: "Camera 1"
-    roi:
-      enabled: false
-      coordinates: []
-    classes_to_detect: ["person"]
+    counting_line:
+      enabled: true
+      coordinates: [[240, 0], [240, 480]]  # Line or polygon for counting
+    classes_to_count: ["person"]  # Changed from classes_to_detect
   
   camera_2:
     rtsp_url: "rtsp://Localhost:18554/mystream"
     name: "Camera 2"
-    roi:
-      enabled: false
-      coordinates: []
-    classes_to_detect: ["person"]
-    
-  # camera_3:
-  #   rtsp_url: "rtsp://admin:password@192.168.1.102:554/stream1"
-  #   name: "Parking"
-  #   roi:
-  #     enabled: false
-  #     coordinates: []
-  #   classes_to_detect: ["car", "truck", "bus", "motorcycle"]
-
-  # camera_4:
-  #   rtsp_url: "rtsp://admin:password@192.168.1.103:554/stream1"
-  #   name: "General Area"
-  #   roi:
-  #     enabled: false
-  #     coordinates: []
-  #   classes_to_detect: []
+    counting_line:
+      enabled: true
+      coordinates: [[240, 0], [240, 480]]
+    classes_to_count: ["person", "car"]
 
 # Batch processing settings
 batch_size: 2
@@ -43,6 +27,13 @@ confidence_threshold: 0.5
 device: "cpu"  # or "cuda" for GPU
 model_input_size: [480, 480]
 
+# Object Counting settings
+counting:
+  log_interval: 900  # Log counts every 900 seconds (15 minutes)
+  show_in: true      # Show IN counts
+  show_out: true     # Show OUT counts
+  reset_after_log: false  # Whether to reset counts after logging
+
 # Visualization settings
 visualization:
   box_color: [0, 255, 0]  # Green in BGR
@@ -50,9 +41,9 @@ visualization:
   text_color: [0, 255, 0]  # Green in BGR
   text_thickness: 2
   font_scale: 0.6
-  show_roi: true  # Draw ROI polygon on visualized frames
-  roi_color: [255, 0, 0]  # Blue in BGR
-  roi_thickness: 2
+  show_counting_line: true  # Draw counting line on visualized frames
+  line_color: [255, 0, 0]  # Blue in BGR
+  line_thickness: 2
   
 # Video saving settings
 video_save:
