@@ -1,0 +1,61 @@
+cameras:
+  camera_1:
+    rtsp_url: "rtsp://Localhost:18554/mystream"
+    name: "Camera 1"
+    roi:
+      enabled: false
+      coordinates: []
+    classes_to_detect: ["person"]
+  
+  camera_2:
+    rtsp_url: "rtsp://Localhost:18554/mystream"
+    name: "Camera 2"
+    roi:
+      enabled: false
+      coordinates: []
+    classes_to_detect: ["person"]
+    
+  # camera_3:
+  #   rtsp_url: "rtsp://admin:password@192.168.1.102:554/stream1"
+  #   name: "Parking"
+  #   roi:
+  #     enabled: false
+  #     coordinates: []
+  #   classes_to_detect: ["car", "truck", "bus", "motorcycle"]
+
+  # camera_4:
+  #   rtsp_url: "rtsp://admin:password@192.168.1.103:554/stream1"
+  #   name: "General Area"
+  #   roi:
+  #     enabled: false
+  #     coordinates: []
+  #   classes_to_detect: []
+
+# Batch processing settings
+batch_size: 2
+batch_timeout: 0.25
+target_fps: 8
+frame_queue_size: 100
+
+# Model settings
+model_path: "./models/yolov8n.pt"
+confidence_threshold: 0.5
+device: "cpu"  # or "cuda" for GPU
+model_input_size: [480, 480]
+
+# Visualization settings
+visualization:
+  box_color: [0, 255, 0]  # Green in BGR
+  box_thickness: 2
+  text_color: [0, 255, 0]  # Green in BGR
+  text_thickness: 2
+  font_scale: 0.6
+  show_roi: true  # Draw ROI polygon on visualized frames
+  roi_color: [255, 0, 0]  # Blue in BGR
+  roi_thickness: 2
+  
+# Video saving settings
+video_save:
+  codec: "mp4v"  # or "XVID", "MJPG"
+  fps: 8
+  output_dir: "./output_videos"
