@@ -1,0 +1,77 @@
+cameras:
+  camera_1:
+    rtsp_url: "rtsp://Localhost:18554/mystream"
+    name: "Camera 1"
+    counting_line:
+      enabled: true
+      coordinates: [[240, 0], [240, 480]]
+    classes_to_count: ["person"]
+  
+  camera_2:
+    rtsp_url: "rtsp://Localhost:18554/mystream"
+    name: "Camera 2"
+    counting_line:
+      enabled: true
+      coordinates: [[240, 0], [240, 480]]
+    classes_to_count: ["person", "car"]
+
+# Batch processing settings
+batch_size: 2
+batch_timeout: 0.25
+target_fps: 8
+frame_queue_size: 100
+
+# Model settings
+model_name: "yolov8n.pt"  # Changed to just filename
+confidence_threshold: 0.5
+device: "auto"  # or "cuda" for GPU
+model_input_size: [854, 480]
+
+# Object Counting settings
+counting:
+  log_interval: 900  # Log counts every 900 seconds (15 minutes)
+  show_in: true
+  show_out: true
+  reset_after_log: false
+
+# Visualization settings
+visualization:
+  box_color: [0, 255, 0]
+  box_thickness: 2
+  text_color: [0, 255, 0]
+  text_thickness: 2
+  font_scale: 0.6
+  show_counting_line: true
+  line_color: [255, 0, 0]
+  line_thickness: 2
+  
+# Video saving settings
+video_save:
+  codec: "mp4v"
+  fps: 8
+
+# Path configuration (NEW)
+paths:
+  model_dir: "./models"
+  log_dir: "./logs"
+  count_log_dir: "./count_logs"
+  output_video_dir: "./output_videos"
+
+# Producer settings (NEW)
+producer:
+  reconnect_max_retries: 10
+  reconnect_base_delay: 1.0  # seconds
+  reconnect_max_delay: 60.0  # seconds
+  reconnect_backoff_factor: 2.0
+
+# Consumer settings (NEW)
+consumer:
+  mode: "auto"  # 'gpu' or 'cpu'
+  enable_parallel: true  # Toggle parallel processing
+  max_workers: 4  # For parallel processing pool
+
+# Health monitoring (NEW)
+health_api:
+  enabled: true  # Set to true to enable HTTP API
+  host: "0.0.0.0"
+  port: 8080
