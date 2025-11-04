@@ -25,7 +25,7 @@ class CountingConsumer:
     def __init__(self, config_path="config_cpu.yaml", visualize_mode=None):
         with open(config_path, 'r') as file:
             self.config = yaml.safe_load(file)
-        
+
         # Path configuration
         self.paths = self.config.get('paths', {})
         self.model_dir = self.paths.get('model_dir', './models')
@@ -37,7 +37,7 @@ class CountingConsumer:
         os.makedirs(self.model_dir, exist_ok=True)
         os.makedirs(self.count_log_dir, exist_ok=True)
         
-        # Load YOLOv8 model
+        # Load YOLO model
         model_path = os.path.join(self.model_dir, self.config['model_name'])
         self.model = YOLO(model_path)
         self.device = self.config['device']

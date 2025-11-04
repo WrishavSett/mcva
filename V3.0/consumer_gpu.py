@@ -20,17 +20,19 @@ class GPUOptimizedConsumer:
     GPU-optimized consumer with true batched inference.
     Maintains all V2.1 functionality while maximizing GPU utilization.
     """
-    
+
     def __init__(self, config_path="config_cpu.yaml", visualize_mode=None):
         with open(config_path, 'r') as file:
             self.config = yaml.safe_load(file)
-        
+
         # Path configuration
         self.paths = self.config.get('paths', {})
         self.model_dir = self.paths.get('model_dir', './models')
+        self.log_dir = self.paths.get('log_dir', './logs')
         self.count_log_dir = self.paths.get('count_log_dir', './count_logs')
         self.output_video_dir = self.paths.get('output_video_dir', './output_videos')
         
+        # Create directories
         os.makedirs(self.model_dir, exist_ok=True)
         os.makedirs(self.count_log_dir, exist_ok=True)
         
@@ -59,17 +61,23 @@ class GPUOptimizedConsumer:
         self.video_config = self.config.get('video_save', {})
         self.video_writers = {}
         
+        # Create output directory for saved videos
         if self.visualize_mode == 'save':
             os.makedirs(self.output_video_dir, exist_ok=True)
+            logger.info(f"Video output directory: {self.output_video_dir}")
         
-        # Create class mappings
+        # Create class name to ID mapping
         self.class_name_to_id = {name: idx for idx, name in self.model.names.items()}
         self.class_id_to_name = self.model.names
         
-        # Initialize counters
+        # Initialize object counters for each camera
         self.object_counters = {}
-        self.counter_locks = {}
+        self.counter_locks = {}  # Thread locks for parallel processing
+        
+        # Logging control
         self.last_log_time = {}
+
+        # Initialize counters
         self._initialize_counters()
         
         self.pending_frames = []
@@ -82,7 +90,8 @@ class GPUOptimizedConsumer:
         logger.info(f"GPU-optimized batching: ENABLED (batch_size={self.batch_size})")
         logger.info(f"Counting log interval: {self.log_interval} seconds")
         logger.info(f"Visualization mode: {self.visualize_mode if self.visualize_mode else 'disabled'}")
-    
+        logger.info(f"Available classes: {list(self.class_name_to_id.keys())}")
+
     def _initialize_counters(self):
         """Initialize counter state for each camera"""
         for camera_id, camera_config in self.config['cameras'].items():
@@ -119,13 +128,17 @@ class GPUOptimizedConsumer:
         self.producer = producer
         
         while self.running.is_set():
+            # Collect frames for batch
             self._collect_frames()
             
+            # Process batch if ready
             if self._should_process_batch():
                 self._process_batch_gpu_optimized()
             
+            # Check if we should log counts for any camera
             self._check_and_log_counts()
             
+            # Handle OpenCV window events if displaying
             if self.visualize_mode == 'display':
                 cv2.waitKey(1)
             
@@ -135,18 +148,22 @@ class GPUOptimizedConsumer:
         """Stop the consumer"""
         self.running.clear()
         
+        # Process any remaining frames
         if self.pending_frames:
             self._process_batch_gpu_optimized()
         
+        # Log final counts for all cameras
         logger.info("===== FINAL COUNT SUMMARY =====")
         for camera_id in self.object_counters.keys():
             self._log_counts(camera_id, force=True)
         
+        # Close all video writers
         if self.visualize_mode == 'save':
             for camera_id, writer in self.video_writers.items():
                 writer.release()
                 logger.info(f"Closed video writer for camera: {camera_id}")
         
+        # Close all OpenCV windows
         if self.visualize_mode == 'display':
             cv2.destroyAllWindows()
     
@@ -494,6 +511,7 @@ class GPUOptimizedConsumer:
                 'log_type': 'FINAL' if force else 'PERIODIC'
             }
         
+        # Log to console
         log_prefix = "FINAL COUNT" if force else "PERIODIC COUNT"
         logger.info(f"{'='*80}")
         logger.info(f"{log_prefix} - {counter['camera_name']} ({camera_id})")
@@ -523,8 +541,10 @@ class GPUOptimizedConsumer:
         except Exception as e:
             logger.error(f"Unexpected error saving count data: {e}", exc_info=True)
         
+        # Update last log time
         self.last_log_time[camera_id] = current_time
         
+        # Reset counts if configured
         if self.reset_after_log and not force:
             counter['in_count'] = 0
             counter['out_count'] = 0
