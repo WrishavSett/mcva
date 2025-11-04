@@ -15,21 +15,21 @@ cameras:
       coordinates: [[240, 0], [240, 480]]
     classes_to_count: ["person", "car"]
 
-# Batch processing settings - OPTIMIZED FOR GPU
-batch_size: 8  # Larger batches for GPU (was 2 for CPU)
-batch_timeout: 0.5  # Wait longer to accumulate frames (was 0.25)
+# Batch processing settings
+batch_size: 8
+batch_timeout: 0.5
 target_fps: 8
 frame_queue_size: 100
 
-# Model settings - GPU ENABLED
+# Model settings
 model_name: "yolov8n.pt"
 confidence_threshold: 0.5
-device: "auto"  # GPU enabled (was "cpu")
-model_input_size: [854, 480]  # Larger input for GPU (was 480x480)
+device: "auto"  # "cpu" for CPU or "cuda" for GPU
+model_input_size: [854, 480]
 
 # Object Counting settings
 counting:
-  log_interval: 900
+  log_interval: 900 # Log counts every 900 seconds (15 minutes)
   show_in: true
   show_out: true
   reset_after_log: false
@@ -60,14 +60,14 @@ paths:
 # Producer settings
 producer:
   reconnect_max_retries: 10
-  reconnect_base_delay: 1.0
-  reconnect_max_delay: 60.0
+  reconnect_base_delay: 1.0  # seconds
+  reconnect_max_delay: 60.0  # seconds
   reconnect_backoff_factor: 2.0
 
-# Consumer settings - GPU OPTIMIZED
+# Consumer settings
 consumer:
-  mode: "auto"  # NEW: 'gpu' or 'cpu'
-  enable_parallel: false  # Disabled for GPU (batching handles parallelism)
+  mode: "auto"  # 'gpu' or 'cpu'
+  enable_parallel: false  # Toggle parallel processing TRUE for CPU
   max_workers: 1  # Single inference thread for GPU
 
 # Health monitoring

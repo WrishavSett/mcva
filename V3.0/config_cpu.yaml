@@ -22,14 +22,14 @@ target_fps: 8
 frame_queue_size: 100
 
 # Model settings
-model_name: "yolov8n.pt"  # Changed to just filename
+model_name: "yolov8n.pt"
 confidence_threshold: 0.5
-device: "auto"  # or "cuda" for GPU
+device: "auto"  # "cpu" for CPU or "cuda" for GPU
 model_input_size: [854, 480]
 
 # Object Counting settings
 counting:
-  log_interval: 900  # Log counts every 900 seconds (15 minutes)
+  log_interval: 900 # Log counts every 900 seconds (15 minutes)
   show_in: true
   show_out: true
   reset_after_log: false
@@ -50,28 +50,28 @@ video_save:
   codec: "mp4v"
   fps: 8
 
-# Path configuration (NEW)
+# Path configuration
 paths:
   model_dir: "./models"
   log_dir: "./logs"
   count_log_dir: "./count_logs"
   output_video_dir: "./output_videos"
 
-# Producer settings (NEW)
+# Producer settings
 producer:
   reconnect_max_retries: 10
   reconnect_base_delay: 1.0  # seconds
   reconnect_max_delay: 60.0  # seconds
   reconnect_backoff_factor: 2.0
 
-# Consumer settings (NEW)
+# Consumer settings
 consumer:
   mode: "auto"  # 'gpu' or 'cpu'
-  enable_parallel: true  # Toggle parallel processing
+  enable_parallel: true  # Toggle parallel processing TRUE for CPU
   max_workers: 4  # For parallel processing pool
 
-# Health monitoring (NEW)
+# Health monitoring
 health_api:
-  enabled: true  # Set to true to enable HTTP API
+  enabled: true
   host: "0.0.0.0"
   port: 8080
