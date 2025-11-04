@@ -6,3 +6,5 @@ pandas
 PyYAML
 torch
 ultralytics
+shapely
+flask
