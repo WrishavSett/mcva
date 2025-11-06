@@ -72,6 +72,6 @@ consumer:
 
 # Health monitoring
 health_api:
-  enabled: true
+  enabled: false
   host: "0.0.0.0"
   port: 8080
