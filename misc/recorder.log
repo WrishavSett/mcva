@@ -1,0 +1,5 @@
+2025-11-11 15:58:44,509 - INFO - Waiting for 75.49 seconds until 2025-11-11 16:00:00 to start recording.
+2025-11-11 16:00:00,006 - INFO - Starting recording for 3600 seconds to /Users/arnabchakraborty/Desktop/WrishavSett/mcva/misc/vids/20251111_160000.mp4
+2025-11-11 16:00:01,512 - INFO - Recording at 853x480 @ 4fps using H.264 codec.
+2025-11-11 16:07:20,561 - INFO - Closing video stream and writer.
+2025-11-11 16:07:20,692 - INFO - Script interrupted by user. Exiting.
