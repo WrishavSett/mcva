@@ -64,7 +64,7 @@ producer:
 
 # Health monitoring
 health_api:
-  enabled: false
+  enabled: true
   host: "0.0.0.0"
   port: 8080
 
@@ -72,8 +72,8 @@ health_api:
 profiles:
   cpu:
     device: "cpu"
-    batch_size: 2
-    batch_timeout: 0.25
+    batch_size: 4
+    batch_timeout: 1
     consumer:
       mode: "cpu"
       enable_parallel: true
