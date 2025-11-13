@@ -54,14 +54,14 @@ def log_consolidated_counts(camera_data, log_dir, force=False):
     
     log_type = "FINAL" if force else "PERIODIC"
     
-    logger.info("="*80)
-    logger.info("FINAL COUNT SUMMARY")
     for camera_id, data in camera_data.items():
         if data:
             consolidated_data[f"camera_{camera_id}"] = data
 
             # Log to console if final count
             if force:
+                logger.info("="*80)
+                logger.info(f"{log_type} COUNT SUMMARY")
                 logger.info(f"Camera: {data['camera_name']} ({camera_id})")
                 logger.info(f"  Elapsed Time: {data['elapsed_seconds']:.1f} seconds")
                 if 'in_count' in data:
@@ -71,8 +71,7 @@ def log_consolidated_counts(camera_data, log_dir, force=False):
                     logger.info("  Class-wise Counts:")
                     for class_name, counts in data['classwise_counts'].items():
                         logger.info(f"    {class_name}: IN={counts['IN']}, OUT={counts['OUT']}")
-
-    logger.info("="*80)
+                logger.info("="*80)
 
     if len(consolidated_data) > 1:  # apart from timestamp
         log_filename = f"{log_type.lower()}_counts_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
