@@ -34,19 +34,16 @@ graph TD
     end
 
     subgraph Producer
-        direction LR
         P1[Capture Thread 1]
         P2[Capture Thread 2]
         Pn[...]
     end
 
     subgraph Consumer
-        direction LR
         C1[Process Thread/Batch]
     end
 
     subgraph System Artifacts
-        direction TB
         LOGs[Log Files]
         JSON[JSON Count Logs]
         VIDs[Output Videos]
@@ -74,7 +71,6 @@ graph TD
     C1 -- Saves Videos (Optional) --> VIDs
 
     subgraph "Health API"
-        direction TB
         API[/status]
         API2[/health]
         API3[/cameras]
