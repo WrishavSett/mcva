@@ -71,9 +71,9 @@ graph TD
     C1 -- Saves Videos (Optional) --> VIDs
 
     subgraph "Health API"
-        API[/status]
-        API2[/health]
-        API3[/cameras]
+        API["/status"]
+        API2["/health"]
+        API3["/cameras"]
     end
 
     C1 -- Provides Status --> API
