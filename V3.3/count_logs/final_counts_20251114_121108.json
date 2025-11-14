@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-14 12:11:08",
+  "camera_camera_1": {
+    "camera_name": "Camera 1",
+    "elapsed_seconds": 155.21561813354492,
+    "in_count": 47,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 47,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_2": {
+    "camera_name": "Camera 2",
+    "elapsed_seconds": 155.21561813354492,
+    "in_count": 47,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 47,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  }
+}
