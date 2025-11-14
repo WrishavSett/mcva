@@ -27,56 +27,66 @@ The following diagram illustrates the data flow through the system:
 
 ```mermaid
 graph TD
-    subgraph Video Sources
-        RTSP1[RTSP Stream 1]
-        RTSP2[RTSP Stream 2]
-        RTSPn[...]
+    A[User executes `python main.py`] --> B{main.py};
+
+    subgraph "A. Initialization & Orchestration"
+        B -- Reads config --> C[config.yaml];
+        B -- Selects Profile --> D{CPU or GPU?};
+        B -- Initializes --> E[FrameProducer `producer.py`];
+        D -- "CPU" --> F[CountingConsumer `consumer_cpu.py`];
+        D -- "GPU" --> G[GPUOptimizedConsumer `consumer_gpu.py`];
+        B -- Starts Threads --> E;
+        B -- Starts Threads --> F;
+        B -- Starts Threads --> G;
     end
 
-    subgraph Producer
-        P1[Capture Thread 1]
-        P2[Capture Thread 2]
-        Pn[...]
+    subgraph "B. Video Ingestion Pipeline"
+        H[RTSP Streams] -- Captured by --> E;
+        E -- Puts frames into --> I{{Frame Queue}};
     end
 
-    subgraph Consumer
-        C1[Process Thread/Batch]
+    subgraph "C. Object Detection & Counting"
+        I -- Fetches frames --> F;
+        I -- Fetches frames --> G;
+
+        subgraph "CPU Path"
+            F -- Uses ThreadPool --> J[Processes frames in parallel];
+            J -- For each camera --> K[ObjectCounter `ObjectCount.py`];
+            K -- Performs tracking & counting --> L[YOLOv8 Model `models/yolov8n.pt`];
+        end
+
+        subgraph "GPU Path"
+            G -- Collects frames into a batch --> M[Batched Inference];
+            M -- Performs tracking & counting --> L;
+        end
     end
 
-    subgraph System Artifacts
-        LOGs[Log Files]
-        JSON[JSON Count Logs]
-        VIDs[Output Videos]
+    subgraph "D. System Outputs"
+        F -- Writes --> N[Log Files `logs/`];
+        F -- Writes --> O[JSON Counts `count_logs/`];
+        F -- Writes --> P[Saved Videos `output_videos/`];
+
+        G -- Writes --> N;
+        G -- Writes --> O;
+        G -- Writes --> P;
     end
 
-    RTSP1 --> P1
-    RTSP2 --> P2
-    RTSPn --> Pn
-
-    P1 --> FQ{{Frame Queue}}
-    P2 --> FQ{{Frame Queue}}
-    Pn --> FQ{{Frame Queue}}
-
-    FQ --> C1
-
-    subgraph "YOLOv8 Model"
-        M[yolov8n.pt]
+    subgraph "E. Health Monitoring API (Optional)"
+        B -- Hosts --> Q[Flask API];
+        Q -- Provides endpoints --> R["GET /health"];
+        Q -- Provides endpoints --> S["GET /status"];
+        Q -- Provides endpoints --> T["GET /cameras"];
     end
 
-    C1 -- Performs Inference --> M
-    M -- Returns Detections --> C1
-
-    C1 -- Writes Logs --> LOGs
-    C1 -- Writes Counts --> JSON
-    C1 -- Saves Videos (Optional) --> VIDs
-
-    subgraph "Health API"
-        API["/status"]
-        API2["/health"]
-        API3["/cameras"]
-    end
-
-    C1 -- Provides Status --> API
+    style A fill:#333333,stroke:#cccccc,stroke-width:2px,color:#eeeeee
+    style B fill:#444444,stroke:#dddddd,stroke-width:2px,color:#eeeeee
+    style C fill:#555555,stroke:#cccccc,stroke-width:2px,color:#eeeeee
+    style E fill:#444444,stroke:#dddddd,stroke-width:2px,color:#eeeeee
+    style F fill:#444444,stroke:#dddddd,stroke-width:2px,color:#eeeeee
+    style G fill:#444444,stroke:#dddddd,stroke-width:2px,color:#eeeeee
+    style K fill:#444444,stroke:#dddddd,stroke-width:2px,color:#eeeeee
+    style L fill:#2f4f4f,stroke:#a9a9a9,stroke-width:2px,color:#eeeeee
+    style Q fill:#555555,stroke:#cccccc,stroke-width:2px,color:#eeeeee
 ```
 
 ## File Descriptions
