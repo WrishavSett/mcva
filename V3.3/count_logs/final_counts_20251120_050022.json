@@ -1,0 +1,133 @@
+{
+  "timestamp": "2025-11-20 05:00:22",
+  "camera_camera_1": {
+    "camera_name": "Camera 1",
+    "elapsed_seconds": 301.1844687461853,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_2": {
+    "camera_name": "Camera 2",
+    "elapsed_seconds": 301.1844003200531,
+    "in_count": 13,
+    "out_count": 1,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 1
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_3": {
+    "camera_name": "Camera 3",
+    "elapsed_seconds": 301.18433809280396,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_4": {
+    "camera_name": "Camera 4",
+    "elapsed_seconds": 301.1842906475067,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_5": {
+    "camera_name": "Camera 5",
+    "elapsed_seconds": 301.18424677848816,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_6": {
+    "camera_name": "Camera 6",
+    "elapsed_seconds": 301.1842031478882,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_7": {
+    "camera_name": "Camera 7",
+    "elapsed_seconds": 301.184161901474,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_8": {
+    "camera_name": "Camera 8",
+    "elapsed_seconds": 301.1841185092926,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_9": {
+    "camera_name": "Camera 9",
+    "elapsed_seconds": 301.1840777397156,
+    "in_count": 14,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 14,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  },
+  "camera_camera_10": {
+    "camera_name": "Camera 10",
+    "elapsed_seconds": 301.18403792381287,
+    "in_count": 13,
+    "out_count": 0,
+    "classwise_counts": {
+      "person": {
+        "IN": 13,
+        "OUT": 0
+      }
+    },
+    "log_type": "FINAL"
+  }
+}

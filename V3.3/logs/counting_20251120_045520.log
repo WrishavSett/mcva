@@ -1,0 +1,1806 @@
+2025-11-20 04:55:20 - __main__ - INFO - Logging to file: ./logs/counting_20251120_045520.log
+2025-11-20 04:55:20 - __main__ - INFO - Logging to console: enabled
+2025-11-20 04:55:20 - __main__ - INFO - CUDA available: NVIDIA TITAN V
+2025-11-20 04:55:20 - __main__ - INFO - CUDA version: 11.8
+2025-11-20 04:55:20 - __main__ - INFO - Visualization mode: Save to video files
+2025-11-20 04:55:20 - __main__ - INFO - Using GPU-optimized consumer
+2025-11-20 04:55:20 - consumer_gpu - INFO - Video output directory: ./output_videos
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 1 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 2 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 3 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 4 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 5 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 6 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 7 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 8 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 9 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Initialized counter for Camera 10 with line: [[240, 0], [240, 480]]
+2025-11-20 04:55:20 - consumer_gpu - INFO - Model loaded on cuda
+2025-11-20 04:55:20 - consumer_gpu - INFO - Model input size: (864, 480)
+2025-11-20 04:55:20 - consumer_gpu - INFO - GPU-optimized batching: ENABLED (batch_size=10)
+2025-11-20 04:55:20 - consumer_gpu - INFO - Counting log interval: 900 seconds
+2025-11-20 04:55:20 - consumer_gpu - INFO - Visualization mode: save
+2025-11-20 04:55:20 - consumer_gpu - INFO - Available classes: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush']
+2025-11-20 04:55:20 - __main__ - INFO - Starting Multi-Camera Object Counting System with save mode
+2025-11-20 04:55:20 - __main__ - INFO - Consumer mode: GPU
+2025-11-20 04:55:20 - __main__ - INFO - Count logging interval: 900 seconds
+2025-11-20 04:55:20 - __main__ - INFO - Starting Producer.
+2025-11-20 04:55:20 - producer - INFO - Camera camera_1 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 1 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_2 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 2 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_3 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 3 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_4 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 4 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_5 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 5 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_6 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 6 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_7 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 7 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_8 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 8 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_9 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 9 - Counting Line: True, Classes: ['person']
+2025-11-20 04:55:20 - producer - INFO - Camera camera_10 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - producer - INFO - Started capture for Camera 10 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:55:20 - __main__ - INFO - Starting Consumer thread.
+2025-11-20 04:55:20 - __main__ - INFO - Pipeline running. Press Ctrl+C to stop.
+2025-11-20 04:55:21 - producer - INFO - camera_1: Successfully connected
+2025-11-20 04:55:22 - producer - INFO - camera_2: Successfully connected
+2025-11-20 04:55:23 - producer - INFO - camera_4: Successfully connected
+2025-11-20 04:55:24 - producer - INFO - camera_6: Successfully connected
+2025-11-20 04:55:25 - producer - INFO - camera_8: Successfully connected
+2025-11-20 04:55:26 - producer - INFO - camera_10: Successfully connected
+2025-11-20 04:55:27 - producer - INFO - camera_5: Successfully connected
+2025-11-20 04:55:28 - producer - INFO - camera_9: Successfully connected
+2025-11-20 04:55:29 - producer - INFO - camera_3: Successfully connected
+2025-11-20 04:55:29 - consumer_gpu - INFO - Created video writer for Camera 6: ./output_videos/camera_6_Camera_6_20251120_045525.mp4
+2025-11-20 04:55:29 - consumer_gpu - INFO - Processed batch of 1 frames in 4.559s (GPU-optimized)
+2025-11-20 04:55:30 - producer - INFO - camera_7: Successfully connected
+2025-11-20 04:55:30 - consumer_gpu - INFO - Created video writer for Camera 2: ./output_videos/camera_2_Camera_2_20251120_045529.mp4
+2025-11-20 04:55:30 - consumer_gpu - INFO - Created video writer for Camera 4: ./output_videos/camera_4_Camera_4_20251120_045530.mp4
+2025-11-20 04:55:30 - consumer_gpu - INFO - Created video writer for Camera 1: ./output_videos/camera_1_Camera_1_20251120_045530.mp4
+2025-11-20 04:55:30 - consumer_gpu - INFO - Processed batch of 10 frames in 1.003s (GPU-optimized)
+2025-11-20 04:55:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:55:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:55:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:55:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:55:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:55:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:55:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:55:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:55:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:55:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:55:32 - consumer_gpu - INFO - Created video writer for Camera 5: ./output_videos/camera_5_Camera_5_20251120_045532.mp4
+2025-11-20 04:55:32 - consumer_gpu - INFO - Created video writer for Camera 8: ./output_videos/camera_8_Camera_8_20251120_045532.mp4
+2025-11-20 04:55:32 - consumer_gpu - INFO - Created video writer for Camera 9: ./output_videos/camera_9_Camera_9_20251120_045532.mp4
+2025-11-20 04:55:32 - consumer_gpu - INFO - Created video writer for Camera 3: ./output_videos/camera_3_Camera_3_20251120_045532.mp4
+2025-11-20 04:55:32 - consumer_gpu - INFO - Created video writer for Camera 10: ./output_videos/camera_10_Camera_10_20251120_045532.mp4
+2025-11-20 04:55:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:55:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:55:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:55:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:55:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:55:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:55:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.175s (GPU-optimized)
+2025-11-20 04:55:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:55:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:55:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:55:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:55:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:55:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:55:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.244s (GPU-optimized)
+2025-11-20 04:55:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.322s (GPU-optimized)
+2025-11-20 04:55:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:55:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:55:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:55:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:55:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:55:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:55:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:55:37 - consumer_gpu - INFO - Created video writer for Camera 7: ./output_videos/camera_7_Camera_7_20251120_045537.mp4
+2025-11-20 04:55:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:55:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:55:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:55:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:55:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:55:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:55:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.266s (GPU-optimized)
+2025-11-20 04:55:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:55:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.247s (GPU-optimized)
+2025-11-20 04:55:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.245s (GPU-optimized)
+2025-11-20 04:55:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:55:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:55:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 04:55:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.247s (GPU-optimized)
+2025-11-20 04:55:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:55:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.257s (GPU-optimized)
+2025-11-20 04:55:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.243s (GPU-optimized)
+2025-11-20 04:55:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:55:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:55:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:55:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:55:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:55:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:55:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:55:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:55:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:55:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:55:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:55:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:55:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:55:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:55:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:55:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:55:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:55:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.241s (GPU-optimized)
+2025-11-20 04:55:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:55:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.244s (GPU-optimized)
+2025-11-20 04:55:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.242s (GPU-optimized)
+2025-11-20 04:55:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:55:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:55:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:55:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:55:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.239s (GPU-optimized)
+2025-11-20 04:55:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:55:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:55:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:55:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.278s (GPU-optimized)
+2025-11-20 04:55:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:55:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:55:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:55:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:55:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:55:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:55:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:55:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:55:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:55:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:55:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:55:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:55:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:55:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:55:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:55:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:55:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:55:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:55:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:55:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:55:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:55:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:55:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:55:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:55:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:55:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:55:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:55:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:55:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:55:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.252s (GPU-optimized)
+2025-11-20 04:55:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.276s (GPU-optimized)
+2025-11-20 04:55:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:55:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.236s (GPU-optimized)
+2025-11-20 04:55:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:55:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:55:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:55:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:55:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:55:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:55:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:55:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:55:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:55:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:55:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.261s (GPU-optimized)
+2025-11-20 04:55:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:55:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:55:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:56:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:56:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:56:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.284s (GPU-optimized)
+2025-11-20 04:56:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.248s (GPU-optimized)
+2025-11-20 04:56:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:56:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:56:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.252s (GPU-optimized)
+2025-11-20 04:56:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:56:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:56:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:56:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:56:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:56:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:56:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:56:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.254s (GPU-optimized)
+2025-11-20 04:56:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.244s (GPU-optimized)
+2025-11-20 04:56:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:56:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:56:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:56:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.257s (GPU-optimized)
+2025-11-20 04:56:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.251s (GPU-optimized)
+2025-11-20 04:56:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.263s (GPU-optimized)
+2025-11-20 04:56:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 04:56:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:56:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:56:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:56:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:56:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.265s (GPU-optimized)
+2025-11-20 04:56:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:56:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:56:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.243s (GPU-optimized)
+2025-11-20 04:56:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:56:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.249s (GPU-optimized)
+2025-11-20 04:56:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.239s (GPU-optimized)
+2025-11-20 04:56:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:56:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.236s (GPU-optimized)
+2025-11-20 04:56:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.247s (GPU-optimized)
+2025-11-20 04:56:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:56:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:56:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:56:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:56:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:56:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:56:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:56:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:56:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:56:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:56:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:56:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:56:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:56:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.236s (GPU-optimized)
+2025-11-20 04:56:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:56:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:56:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:56:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:56:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:56:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:56:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:56:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:56:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:56:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:56:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:56:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:56:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:56:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:56:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:56:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:56:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:56:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:56:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:56:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:56:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:56:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:56:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:56:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:56:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:56:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:56:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.174s (GPU-optimized)
+2025-11-20 04:56:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:56:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:56:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:56:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:56:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.316s (GPU-optimized)
+2025-11-20 04:56:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.252s (GPU-optimized)
+2025-11-20 04:56:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:56:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:56:20 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:56:20 - __main__ - INFO - Consumer mode: GPU
+2025-11-20 04:56:20 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:56:20 - __main__ - INFO - Camera Status:
+2025-11-20 04:56:20 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:56:20 - __main__ - INFO - Counting Status:
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:56:20 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:56:20 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:56:20 - __main__ - INFO -     Next log in: 840 seconds
+2025-11-20 04:56:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:56:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:56:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:56:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:56:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:56:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 04:56:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:56:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:56:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:56:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:56:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:56:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:56:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:56:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:56:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:56:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:56:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:56:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.260s (GPU-optimized)
+2025-11-20 04:56:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:56:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:56:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:56:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:56:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:56:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:56:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:56:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:56:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:56:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:56:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:56:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:56:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:56:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:56:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:56:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:56:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:56:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:56:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:56:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:56:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:56:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:56:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:56:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:56:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:56:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:56:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.178s (GPU-optimized)
+2025-11-20 04:56:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.173s (GPU-optimized)
+2025-11-20 04:56:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:56:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:56:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:56:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:56:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:56:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:56:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:56:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:56:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:56:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:56:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:56:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:56:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:56:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:56:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:56:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:56:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:56:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:56:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:56:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:56:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:56:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:56:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:56:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:56:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.165s (GPU-optimized)
+2025-11-20 04:56:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:56:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:56:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.296s (GPU-optimized)
+2025-11-20 04:56:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.268s (GPU-optimized)
+2025-11-20 04:56:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.264s (GPU-optimized)
+2025-11-20 04:56:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:56:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:56:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:56:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:56:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:56:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:56:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:56:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:56:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:56:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:56:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:56:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:56:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:56:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:56:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:56:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:56:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:56:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:56:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.250s (GPU-optimized)
+2025-11-20 04:56:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:56:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.158s (GPU-optimized)
+2025-11-20 04:56:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.163s (GPU-optimized)
+2025-11-20 04:56:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:56:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:56:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:56:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:56:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.178s (GPU-optimized)
+2025-11-20 04:56:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.178s (GPU-optimized)
+2025-11-20 04:56:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.164s (GPU-optimized)
+2025-11-20 04:56:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:56:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:56:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:56:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:56:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:56:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:56:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:56:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:56:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:56:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:56:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:56:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:56:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:56:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:56:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:56:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:56:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:56:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 04:56:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:56:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.236s (GPU-optimized)
+2025-11-20 04:56:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:56:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:56:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:56:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:56:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:56:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:56:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:56:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:56:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.173s (GPU-optimized)
+2025-11-20 04:56:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:56:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:56:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:56:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:56:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:56:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:56:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:56:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:56:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:56:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:56:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:56:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:56:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:56:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:56:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:56:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:56:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:56:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.178s (GPU-optimized)
+2025-11-20 04:56:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:56:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:56:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:56:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:56:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:57:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:57:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:57:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:57:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:57:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:57:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:57:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:57:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:57:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:57:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:57:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:57:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:57:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:57:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:57:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:57:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.272s (GPU-optimized)
+2025-11-20 04:57:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:57:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:57:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:57:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:57:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:57:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:57:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:57:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:57:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:57:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:57:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:57:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:57:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:57:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:57:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:57:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:57:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:57:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:57:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:57:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:57:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:57:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:57:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:57:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:57:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:57:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:57:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:57:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:57:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:57:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:57:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:57:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:57:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:57:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:57:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:57:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:57:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:57:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:57:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:57:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:57:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:57:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:57:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:57:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:57:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:57:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:57:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:57:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:57:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:57:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:57:20 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:57:20 - __main__ - INFO - Consumer mode: GPU
+2025-11-20 04:57:20 - __main__ - INFO - Frame queue size: 98
+2025-11-20 04:57:20 - __main__ - INFO - Camera Status:
+2025-11-20 04:57:20 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:57:20 - __main__ - INFO - Counting Status:
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:57:20 - __main__ - INFO -     person: IN=5, OUT=0
+2025-11-20 04:57:20 - __main__ - INFO -     Unique objects tracked: 5
+2025-11-20 04:57:20 - __main__ - INFO -     Next log in: 780 seconds
+2025-11-20 04:57:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:57:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:57:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:57:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:57:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:57:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:57:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.175s (GPU-optimized)
+2025-11-20 04:57:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:57:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:57:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.169s (GPU-optimized)
+2025-11-20 04:57:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:57:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.243s (GPU-optimized)
+2025-11-20 04:57:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:57:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.250s (GPU-optimized)
+2025-11-20 04:57:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:57:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:57:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:57:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:57:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:57:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:57:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:57:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:57:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:57:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:57:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.263s (GPU-optimized)
+2025-11-20 04:57:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:57:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:57:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.265s (GPU-optimized)
+2025-11-20 04:57:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:57:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:57:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.160s (GPU-optimized)
+2025-11-20 04:57:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:57:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:57:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:57:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:57:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.169s (GPU-optimized)
+2025-11-20 04:57:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:57:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:57:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:57:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:57:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:57:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:57:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:57:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:57:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:57:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:57:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:57:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:57:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:57:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:57:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:57:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:57:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:57:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:57:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.175s (GPU-optimized)
+2025-11-20 04:57:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:57:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:57:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:57:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:57:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:57:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:57:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:57:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:57:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:57:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:57:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:57:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:57:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:57:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:57:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:57:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:57:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:57:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:57:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:57:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:57:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:57:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:57:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.168s (GPU-optimized)
+2025-11-20 04:57:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.169s (GPU-optimized)
+2025-11-20 04:57:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:57:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.171s (GPU-optimized)
+2025-11-20 04:57:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:57:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:57:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.168s (GPU-optimized)
+2025-11-20 04:57:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:57:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.164s (GPU-optimized)
+2025-11-20 04:57:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:57:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.170s (GPU-optimized)
+2025-11-20 04:57:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:57:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.174s (GPU-optimized)
+2025-11-20 04:57:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:57:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:57:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:57:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:57:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:57:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.319s (GPU-optimized)
+2025-11-20 04:57:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.272s (GPU-optimized)
+2025-11-20 04:57:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:57:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:57:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:57:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:57:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:57:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:57:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:57:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:57:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.246s (GPU-optimized)
+2025-11-20 04:57:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:57:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:57:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:57:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:57:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:57:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:57:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:57:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:57:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:57:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:57:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:57:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:57:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:57:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:57:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:57:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:57:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:57:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:57:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:57:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:57:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:57:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:57:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:57:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:57:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:57:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:57:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:57:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:58:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:58:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:58:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:58:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:58:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:58:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:58:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:58:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:58:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:58:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:58:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:58:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:58:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:58:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.178s (GPU-optimized)
+2025-11-20 04:58:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:58:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:58:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:58:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:58:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.167s (GPU-optimized)
+2025-11-20 04:58:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:58:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:58:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:58:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:58:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:58:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.244s (GPU-optimized)
+2025-11-20 04:58:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.252s (GPU-optimized)
+2025-11-20 04:58:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:58:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.252s (GPU-optimized)
+2025-11-20 04:58:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:58:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:58:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:58:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:58:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.261s (GPU-optimized)
+2025-11-20 04:58:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:58:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:58:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:58:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:58:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:58:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:58:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:58:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.142s (GPU-optimized)
+2025-11-20 04:58:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:58:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:58:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:58:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:58:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:58:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:58:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:58:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:58:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:58:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:58:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:58:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:58:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.241s (GPU-optimized)
+2025-11-20 04:58:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:58:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:58:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:58:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:58:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:58:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:58:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:58:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:58:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:58:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:58:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:58:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:58:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:58:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:58:20 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:58:20 - __main__ - INFO - Consumer mode: GPU
+2025-11-20 04:58:20 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:58:20 - __main__ - INFO - Camera Status:
+2025-11-20 04:58:20 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:58:20 - __main__ - INFO - Counting Status:
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:58:20 - __main__ - INFO -     person: IN=8, OUT=0
+2025-11-20 04:58:20 - __main__ - INFO -     Unique objects tracked: 8
+2025-11-20 04:58:20 - __main__ - INFO -     Next log in: 720 seconds
+2025-11-20 04:58:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:58:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:58:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:58:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:58:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:58:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:58:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:58:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 04:58:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:58:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:58:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:58:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:58:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:58:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:58:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:58:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:58:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:58:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:58:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:58:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:58:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:58:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:58:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:58:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:58:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:58:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.175s (GPU-optimized)
+2025-11-20 04:58:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:58:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:58:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:58:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:58:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:58:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:58:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.173s (GPU-optimized)
+2025-11-20 04:58:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:58:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:58:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.285s (GPU-optimized)
+2025-11-20 04:58:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:58:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:58:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:58:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:58:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:58:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:58:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:58:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:58:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:58:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.240s (GPU-optimized)
+2025-11-20 04:58:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:58:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:58:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:58:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:58:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:58:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:58:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:58:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:58:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:58:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:58:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:58:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:58:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:58:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:58:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:58:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:58:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:58:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.178s (GPU-optimized)
+2025-11-20 04:58:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:58:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:58:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:58:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 04:58:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:58:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:58:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:58:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:58:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:58:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:58:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:58:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:58:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:58:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:58:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:58:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:58:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:58:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:58:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:58:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:58:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:58:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:58:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:58:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:58:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:58:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:58:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:58:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:58:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:58:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:58:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:58:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:58:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:58:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.172s (GPU-optimized)
+2025-11-20 04:58:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:58:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:58:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.174s (GPU-optimized)
+2025-11-20 04:58:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.161s (GPU-optimized)
+2025-11-20 04:58:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.242s (GPU-optimized)
+2025-11-20 04:58:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.249s (GPU-optimized)
+2025-11-20 04:58:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.267s (GPU-optimized)
+2025-11-20 04:58:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:58:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:58:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:58:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:58:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:58:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:58:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:58:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:58:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:58:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:58:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:58:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:58:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:58:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:58:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:58:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:58:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:58:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:58:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:58:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:58:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 04:58:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.138s (GPU-optimized)
+2025-11-20 04:58:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.133s (GPU-optimized)
+2025-11-20 04:58:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:58:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:58:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:58:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:58:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:58:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:58:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:59:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 04:59:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:59:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:59:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:59:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:59:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:59:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:59:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:59:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:59:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:59:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:59:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:59:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:59:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:59:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:59:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:59:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:59:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:59:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:59:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:59:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:59:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:59:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:59:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:59:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:59:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:59:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.172s (GPU-optimized)
+2025-11-20 04:59:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:59:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:59:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:59:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:59:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:59:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.237s (GPU-optimized)
+2025-11-20 04:59:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:59:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:59:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.216s (GPU-optimized)
+2025-11-20 04:59:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:59:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:59:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:59:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:59:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:59:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:59:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 04:59:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:59:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:59:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:59:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:59:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:59:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.174s (GPU-optimized)
+2025-11-20 04:59:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:59:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:59:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:59:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.245s (GPU-optimized)
+2025-11-20 04:59:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.290s (GPU-optimized)
+2025-11-20 04:59:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:59:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:59:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:59:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:59:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:59:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:59:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 04:59:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:59:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 04:59:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:59:20 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:59:20 - __main__ - INFO - Consumer mode: GPU
+2025-11-20 04:59:20 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:59:20 - __main__ - INFO - Camera Status:
+2025-11-20 04:59:20 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:59:20 - __main__ - INFO - Counting Status:
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=1
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 11
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=11, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 11
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:59:20 - __main__ - INFO -     person: IN=10, OUT=0
+2025-11-20 04:59:20 - __main__ - INFO -     Unique objects tracked: 10
+2025-11-20 04:59:20 - __main__ - INFO -     Next log in: 660 seconds
+2025-11-20 04:59:20 - __main__ - INFO - ================================================================================
+2025-11-20 04:59:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 04:59:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:59:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:59:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:59:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:59:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:59:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:59:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:23 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:59:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:59:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:24 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:59:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:59:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:59:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:59:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:25 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:59:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:59:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 04:59:26 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:59:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:59:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:27 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:59:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:59:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:59:28 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:59:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:59:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:59:29 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:59:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 04:59:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:59:30 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:59:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:59:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:59:31 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:59:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:59:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:32 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:59:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:59:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:59:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 04:59:33 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:59:34 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:59:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.171s (GPU-optimized)
+2025-11-20 04:59:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.174s (GPU-optimized)
+2025-11-20 04:59:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:59:35 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:59:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.172s (GPU-optimized)
+2025-11-20 04:59:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.173s (GPU-optimized)
+2025-11-20 04:59:36 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 04:59:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.261s (GPU-optimized)
+2025-11-20 04:59:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.250s (GPU-optimized)
+2025-11-20 04:59:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:59:37 - consumer_gpu - INFO - Processed batch of 10 frames in 0.246s (GPU-optimized)
+2025-11-20 04:59:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:59:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:59:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 04:59:38 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:59:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:59:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:59:39 - consumer_gpu - INFO - Processed batch of 10 frames in 0.241s (GPU-optimized)
+2025-11-20 04:59:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.232s (GPU-optimized)
+2025-11-20 04:59:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:59:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:59:40 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:59:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 04:59:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:59:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:41 - consumer_gpu - INFO - Processed batch of 10 frames in 0.236s (GPU-optimized)
+2025-11-20 04:59:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 04:59:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.151s (GPU-optimized)
+2025-11-20 04:59:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.172s (GPU-optimized)
+2025-11-20 04:59:42 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:59:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:59:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:59:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:43 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.179s (GPU-optimized)
+2025-11-20 04:59:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 04:59:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.218s (GPU-optimized)
+2025-11-20 04:59:44 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 04:59:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 04:59:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.235s (GPU-optimized)
+2025-11-20 04:59:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 04:59:45 - consumer_gpu - INFO - Processed batch of 10 frames in 0.203s (GPU-optimized)
+2025-11-20 04:59:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:59:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 04:59:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 04:59:46 - consumer_gpu - INFO - Processed batch of 10 frames in 0.222s (GPU-optimized)
+2025-11-20 04:59:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 04:59:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 04:59:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:47 - consumer_gpu - INFO - Processed batch of 10 frames in 0.214s (GPU-optimized)
+2025-11-20 04:59:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 04:59:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:59:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.210s (GPU-optimized)
+2025-11-20 04:59:48 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:59:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 04:59:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:59:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:49 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 04:59:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 04:59:50 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:59:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.183s (GPU-optimized)
+2025-11-20 04:59:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.206s (GPU-optimized)
+2025-11-20 04:59:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:59:51 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:59:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:59:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 04:59:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 04:59:52 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 04:59:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 04:59:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:59:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.195s (GPU-optimized)
+2025-11-20 04:59:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:53 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 04:59:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 04:59:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:59:54 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 04:59:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:59:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.223s (GPU-optimized)
+2025-11-20 04:59:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.175s (GPU-optimized)
+2025-11-20 04:59:55 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 04:59:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 04:59:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 04:59:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 04:59:56 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 04:59:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 04:59:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.173s (GPU-optimized)
+2025-11-20 04:59:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 04:59:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:57 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 04:59:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 04:59:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.176s (GPU-optimized)
+2025-11-20 04:59:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 04:59:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 04:59:58 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 04:59:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 04:59:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 04:59:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 04:59:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.184s (GPU-optimized)
+2025-11-20 04:59:59 - consumer_gpu - INFO - Processed batch of 10 frames in 0.189s (GPU-optimized)
+2025-11-20 05:00:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.201s (GPU-optimized)
+2025-11-20 05:00:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 05:00:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 05:00:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 05:00:00 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 05:00:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.191s (GPU-optimized)
+2025-11-20 05:00:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 05:00:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.313s (GPU-optimized)
+2025-11-20 05:00:01 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 05:00:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 05:00:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 05:00:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 05:00:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 05:00:02 - consumer_gpu - INFO - Processed batch of 10 frames in 0.171s (GPU-optimized)
+2025-11-20 05:00:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 05:00:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 05:00:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 05:00:03 - consumer_gpu - INFO - Processed batch of 10 frames in 0.236s (GPU-optimized)
+2025-11-20 05:00:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 05:00:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 05:00:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 05:00:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.207s (GPU-optimized)
+2025-11-20 05:00:04 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 05:00:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.200s (GPU-optimized)
+2025-11-20 05:00:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.196s (GPU-optimized)
+2025-11-20 05:00:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:05 - consumer_gpu - INFO - Processed batch of 10 frames in 0.192s (GPU-optimized)
+2025-11-20 05:00:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.208s (GPU-optimized)
+2025-11-20 05:00:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 05:00:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 05:00:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 05:00:06 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 05:00:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 05:00:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.181s (GPU-optimized)
+2025-11-20 05:00:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.194s (GPU-optimized)
+2025-11-20 05:00:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 05:00:07 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 05:00:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 05:00:08 - consumer_gpu - INFO - Processed batch of 10 frames in 0.234s (GPU-optimized)
+2025-11-20 05:00:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 05:00:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 05:00:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 05:00:09 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 05:00:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 05:00:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 05:00:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:10 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 05:00:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.212s (GPU-optimized)
+2025-11-20 05:00:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.231s (GPU-optimized)
+2025-11-20 05:00:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 05:00:11 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 05:00:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 05:00:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.226s (GPU-optimized)
+2025-11-20 05:00:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.245s (GPU-optimized)
+2025-11-20 05:00:12 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.247s (GPU-optimized)
+2025-11-20 05:00:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.204s (GPU-optimized)
+2025-11-20 05:00:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.225s (GPU-optimized)
+2025-11-20 05:00:13 - consumer_gpu - INFO - Processed batch of 10 frames in 0.229s (GPU-optimized)
+2025-11-20 05:00:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 05:00:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.219s (GPU-optimized)
+2025-11-20 05:00:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.233s (GPU-optimized)
+2025-11-20 05:00:14 - consumer_gpu - INFO - Processed batch of 10 frames in 0.217s (GPU-optimized)
+2025-11-20 05:00:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.227s (GPU-optimized)
+2025-11-20 05:00:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 05:00:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.215s (GPU-optimized)
+2025-11-20 05:00:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.228s (GPU-optimized)
+2025-11-20 05:00:15 - consumer_gpu - INFO - Processed batch of 10 frames in 0.221s (GPU-optimized)
+2025-11-20 05:00:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 05:00:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.213s (GPU-optimized)
+2025-11-20 05:00:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 05:00:16 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 05:00:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.211s (GPU-optimized)
+2025-11-20 05:00:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.209s (GPU-optimized)
+2025-11-20 05:00:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.198s (GPU-optimized)
+2025-11-20 05:00:17 - consumer_gpu - INFO - Processed batch of 10 frames in 0.238s (GPU-optimized)
+2025-11-20 05:00:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.230s (GPU-optimized)
+2025-11-20 05:00:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 05:00:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.220s (GPU-optimized)
+2025-11-20 05:00:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.202s (GPU-optimized)
+2025-11-20 05:00:18 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 05:00:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.193s (GPU-optimized)
+2025-11-20 05:00:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.182s (GPU-optimized)
+2025-11-20 05:00:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.185s (GPU-optimized)
+2025-11-20 05:00:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.190s (GPU-optimized)
+2025-11-20 05:00:19 - consumer_gpu - INFO - Processed batch of 10 frames in 0.187s (GPU-optimized)
+2025-11-20 05:00:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.199s (GPU-optimized)
+2025-11-20 05:00:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.188s (GPU-optimized)
+2025-11-20 05:00:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.177s (GPU-optimized)
+2025-11-20 05:00:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.186s (GPU-optimized)
+2025-11-20 05:00:20 - consumer_gpu - INFO - Processed batch of 10 frames in 0.180s (GPU-optimized)
+2025-11-20 05:00:21 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:21 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 05:00:21 - __main__ - INFO - Consumer mode: GPU
+2025-11-20 05:00:21 - __main__ - INFO - Frame queue size: 95
+2025-11-20 05:00:21 - __main__ - INFO - Camera Status:
+2025-11-20 05:00:21 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 05:00:21 - __main__ - INFO - Counting Status:
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=1
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 14
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=14, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 14
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 05:00:21 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:21 - __main__ - INFO -     Unique objects tracked: 13
+2025-11-20 05:00:21 - __main__ - INFO -     Next log in: 600 seconds
+2025-11-20 05:00:21 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.205s (GPU-optimized)
+2025-11-20 05:00:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.274s (GPU-optimized)
+2025-11-20 05:00:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.244s (GPU-optimized)
+2025-11-20 05:00:21 - __main__ - INFO - Signal 2 received. Stopping...
+2025-11-20 05:00:21 - consumer_gpu - INFO - Processed batch of 10 frames in 0.224s (GPU-optimized)
+2025-11-20 05:00:22 - __main__ - INFO - Pipeline stopping...
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 1 (camera_1)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 2 (camera_2)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 1
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 12
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=1
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 3 (camera_3)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 4 (camera_4)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 5 (camera_5)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 6 (camera_6)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 7 (camera_7)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 8 (camera_8)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 9 (camera_9)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 14 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 14
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=14, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 05:00:22 - __main__ - INFO - Camera: Camera 10 (camera_10)
+2025-11-20 05:00:22 - __main__ - INFO -   Elapsed Time: 301.2 seconds
+2025-11-20 05:00:22 - __main__ - INFO -   Total IN: 13 | Total OUT: 0
+2025-11-20 05:00:22 - __main__ - INFO -   Net Count: 13
+2025-11-20 05:00:22 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 05:00:22 - __main__ - INFO -     person: IN=13, OUT=0
+2025-11-20 05:00:22 - __main__ - INFO - ================================================================================
+2025-11-20 05:00:22 - __main__ - INFO - Consolidated count data saved to: ./count_logs/final_counts_20251120_050022.json
+2025-11-20 05:00:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.197s (GPU-optimized)
+2025-11-20 05:00:22 - consumer_gpu - INFO - Processed batch of 10 frames in 0.282s (GPU-optimized)
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_6
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_2
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_4
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_1
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_5
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_8
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_9
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_3
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_10
+2025-11-20 05:00:22 - consumer_gpu - INFO - Closed video writer for camera: camera_7
+2025-11-20 05:00:22 - producer - INFO - camera_10: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_9: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_8: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_4: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_3: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_7: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_1: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_6: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_5: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - camera_2: Capture thread stopped
+2025-11-20 05:00:22 - producer - INFO - All cameras stopped
+2025-11-20 05:00:22 - __main__ - INFO - Pipeline stopped cleanly.

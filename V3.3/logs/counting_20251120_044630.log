@@ -1,0 +1,604 @@
+2025-11-20 04:46:30 - __main__ - INFO - Logging to file: ./logs/counting_20251120_044630.log
+2025-11-20 04:46:30 - __main__ - INFO - Logging to console: enabled
+2025-11-20 04:46:30 - __main__ - INFO - CUDA not available, will use CPU
+2025-11-20 04:46:30 - __main__ - INFO - Visualization mode: Save to video files
+2025-11-20 04:46:30 - __main__ - INFO - Using standard CPU consumer
+2025-11-20 04:46:30 - consumer_cpu - INFO - Parallel processing enabled with 10 workers
+2025-11-20 04:46:30 - consumer_cpu - INFO - Video output directory: ./output_videos
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 1 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 2 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 3 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 4 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 5 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 6 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:12 - consumer_cpu - INFO - Initialized counter for Camera 7 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:13 - consumer_cpu - INFO - Initialized counter for Camera 8 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:13 - consumer_cpu - INFO - Initialized counter for Camera 9 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:13 - consumer_cpu - INFO - Initialized counter for Camera 10 with line: [[240, 0], [240, 480]]
+2025-11-20 04:47:13 - consumer_cpu - INFO - Model loaded on cpu
+2025-11-20 04:47:13 - consumer_cpu - INFO - Model input size: (864, 480)
+2025-11-20 04:47:13 - consumer_cpu - INFO - Counting log interval: 900 seconds
+2025-11-20 04:47:13 - consumer_cpu - INFO - Visualization mode: save
+2025-11-20 04:47:13 - consumer_cpu - INFO - Available classes: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush']
+2025-11-20 04:47:13 - __main__ - INFO - Starting Multi-Camera Object Counting System with save mode
+2025-11-20 04:47:13 - __main__ - INFO - Consumer mode: CPU
+2025-11-20 04:47:13 - __main__ - INFO - Count logging interval: 900 seconds
+2025-11-20 04:47:13 - __main__ - INFO - Parallel processing: ENABLED (10 workers)
+2025-11-20 04:47:13 - __main__ - INFO - Starting Producer.
+2025-11-20 04:47:13 - producer - INFO - Camera camera_1 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 1 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_2 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 2 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_3 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 3 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_4 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 4 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_5 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 5 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_6 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 6 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_7 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 7 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_8 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 8 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_9 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 9 - Counting Line: True, Classes: ['person']
+2025-11-20 04:47:13 - producer - INFO - Camera camera_10 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - producer - INFO - Started capture for Camera 10 - Counting Line: True, Classes: ['person', 'car']
+2025-11-20 04:47:13 - __main__ - INFO - Starting Consumer thread.
+2025-11-20 04:47:13 - __main__ - INFO - Pipeline running. Press Ctrl+C to stop.
+2025-11-20 04:47:14 - producer - INFO - camera_1: Successfully connected
+2025-11-20 04:47:15 - producer - INFO - camera_2: Successfully connected
+2025-11-20 04:47:16 - producer - INFO - camera_4: Successfully connected
+2025-11-20 04:47:17 - producer - INFO - camera_6: Successfully connected
+2025-11-20 04:47:17 - producer - INFO - camera_8: Successfully connected
+2025-11-20 04:47:18 - producer - INFO - camera_10: Successfully connected
+2025-11-20 04:47:19 - producer - INFO - camera_5: Successfully connected
+2025-11-20 04:47:20 - producer - INFO - camera_9: Successfully connected
+2025-11-20 04:47:21 - producer - INFO - camera_3: Successfully connected
+2025-11-20 04:47:21 - consumer_cpu - INFO - Created video writer for Camera 2: ./output_videos/camera_2_Camera_2_20251120_044717.mp4
+2025-11-20 04:47:21 - consumer_cpu - INFO - Processed batch of 1 frames in 4.244s
+2025-11-20 04:47:22 - producer - INFO - camera_7: Successfully connected
+2025-11-20 04:47:23 - consumer_cpu - INFO - Created video writer for Camera 6: ./output_videos/camera_6_Camera_6_20251120_044723.mp4
+2025-11-20 04:47:23 - consumer_cpu - INFO - Created video writer for Camera 4: ./output_videos/camera_4_Camera_4_20251120_044723.mp4
+2025-11-20 04:47:23 - consumer_cpu - INFO - Created video writer for Camera 1: ./output_videos/camera_1_Camera_1_20251120_044723.mp4
+2025-11-20 04:47:24 - consumer_cpu - INFO - Processed batch of 10 frames in 2.165s
+2025-11-20 04:47:26 - consumer_cpu - INFO - Processed batch of 10 frames in 2.429s
+2025-11-20 04:47:28 - consumer_cpu - INFO - Processed batch of 10 frames in 2.383s
+2025-11-20 04:47:31 - consumer_cpu - INFO - Processed batch of 10 frames in 2.349s
+2025-11-20 04:47:33 - consumer_cpu - INFO - Processed batch of 10 frames in 2.313s
+2025-11-20 04:47:35 - consumer_cpu - INFO - Processed batch of 10 frames in 2.347s
+2025-11-20 04:47:38 - consumer_cpu - INFO - Processed batch of 10 frames in 2.222s
+2025-11-20 04:47:40 - consumer_cpu - INFO - Processed batch of 10 frames in 2.302s
+2025-11-20 04:47:42 - consumer_cpu - INFO - Processed batch of 10 frames in 2.307s
+2025-11-20 04:47:44 - consumer_cpu - INFO - Processed batch of 10 frames in 2.227s
+2025-11-20 04:47:47 - consumer_cpu - INFO - Processed batch of 10 frames in 2.190s
+2025-11-20 04:47:48 - consumer_cpu - INFO - Created video writer for Camera 7: ./output_videos/camera_7_Camera_7_20251120_044748.mp4
+2025-11-20 04:47:48 - consumer_cpu - INFO - Created video writer for Camera 8: ./output_videos/camera_8_Camera_8_20251120_044748.mp4
+2025-11-20 04:47:48 - consumer_cpu - INFO - Created video writer for Camera 10: ./output_videos/camera_10_Camera_10_20251120_044748.mp4
+2025-11-20 04:47:49 - consumer_cpu - INFO - Created video writer for Camera 9: ./output_videos/camera_9_Camera_9_20251120_044749.mp4
+2025-11-20 04:47:49 - consumer_cpu - INFO - Created video writer for Camera 3: ./output_videos/camera_3_Camera_3_20251120_044749.mp4
+2025-11-20 04:47:49 - consumer_cpu - INFO - Created video writer for Camera 5: ./output_videos/camera_5_Camera_5_20251120_044749.mp4
+2025-11-20 04:47:49 - consumer_cpu - INFO - Processed batch of 10 frames in 2.299s
+2025-11-20 04:47:51 - consumer_cpu - INFO - Processed batch of 10 frames in 2.170s
+2025-11-20 04:47:53 - consumer_cpu - INFO - Processed batch of 10 frames in 2.276s
+2025-11-20 04:47:56 - consumer_cpu - INFO - Processed batch of 10 frames in 2.191s
+2025-11-20 04:47:58 - consumer_cpu - INFO - Processed batch of 10 frames in 2.287s
+2025-11-20 04:48:00 - consumer_cpu - INFO - Processed batch of 10 frames in 2.305s
+2025-11-20 04:48:03 - consumer_cpu - INFO - Processed batch of 10 frames in 2.207s
+2025-11-20 04:48:05 - consumer_cpu - INFO - Processed batch of 10 frames in 2.310s
+2025-11-20 04:48:07 - consumer_cpu - INFO - Processed batch of 10 frames in 2.272s
+2025-11-20 04:48:09 - consumer_cpu - INFO - Processed batch of 10 frames in 2.199s
+2025-11-20 04:48:12 - consumer_cpu - INFO - Processed batch of 10 frames in 2.221s
+2025-11-20 04:48:13 - __main__ - INFO - ================================================================================
+2025-11-20 04:48:13 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:48:13 - __main__ - INFO - Consumer mode: CPU
+2025-11-20 04:48:13 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:48:13 - __main__ - INFO - Camera Status:
+2025-11-20 04:48:13 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:48:13 - __main__ - INFO - Counting Status:
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:48:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:48:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:48:14 - __main__ - INFO -     Next log in: 839 seconds
+2025-11-20 04:48:14 - __main__ - INFO - ================================================================================
+2025-11-20 04:48:14 - consumer_cpu - INFO - Processed batch of 10 frames in 2.301s
+2025-11-20 04:48:16 - consumer_cpu - INFO - Processed batch of 10 frames in 2.311s
+2025-11-20 04:48:19 - consumer_cpu - INFO - Processed batch of 10 frames in 2.387s
+2025-11-20 04:48:21 - consumer_cpu - INFO - Processed batch of 10 frames in 2.321s
+2025-11-20 04:48:23 - consumer_cpu - INFO - Processed batch of 10 frames in 2.277s
+2025-11-20 04:48:25 - consumer_cpu - INFO - Processed batch of 10 frames in 2.210s
+2025-11-20 04:48:28 - consumer_cpu - INFO - Processed batch of 10 frames in 2.309s
+2025-11-20 04:48:30 - consumer_cpu - INFO - Processed batch of 10 frames in 2.207s
+2025-11-20 04:48:32 - consumer_cpu - INFO - Processed batch of 10 frames in 2.166s
+2025-11-20 04:48:34 - consumer_cpu - INFO - Processed batch of 10 frames in 2.180s
+2025-11-20 04:48:37 - consumer_cpu - INFO - Processed batch of 10 frames in 2.194s
+2025-11-20 04:48:39 - consumer_cpu - INFO - Processed batch of 10 frames in 2.173s
+2025-11-20 04:48:41 - consumer_cpu - INFO - Processed batch of 10 frames in 2.266s
+2025-11-20 04:48:43 - consumer_cpu - INFO - Processed batch of 10 frames in 2.243s
+2025-11-20 04:48:46 - consumer_cpu - INFO - Processed batch of 10 frames in 2.256s
+2025-11-20 04:48:48 - consumer_cpu - INFO - Processed batch of 10 frames in 2.081s
+2025-11-20 04:48:50 - consumer_cpu - INFO - Processed batch of 10 frames in 2.233s
+2025-11-20 04:48:52 - consumer_cpu - INFO - Processed batch of 10 frames in 2.283s
+2025-11-20 04:48:55 - consumer_cpu - INFO - Processed batch of 10 frames in 2.330s
+2025-11-20 04:48:57 - consumer_cpu - INFO - Processed batch of 10 frames in 2.453s
+2025-11-20 04:48:59 - consumer_cpu - INFO - Processed batch of 10 frames in 2.317s
+2025-11-20 04:49:02 - consumer_cpu - INFO - Processed batch of 10 frames in 2.239s
+2025-11-20 04:49:04 - consumer_cpu - INFO - Processed batch of 10 frames in 2.208s
+2025-11-20 04:49:06 - consumer_cpu - INFO - Processed batch of 10 frames in 2.148s
+2025-11-20 04:49:08 - consumer_cpu - INFO - Processed batch of 10 frames in 2.207s
+2025-11-20 04:49:10 - consumer_cpu - INFO - Processed batch of 10 frames in 2.100s
+2025-11-20 04:49:13 - consumer_cpu - INFO - Processed batch of 10 frames in 2.230s
+2025-11-20 04:49:13 - __main__ - INFO - ================================================================================
+2025-11-20 04:49:13 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:49:13 - __main__ - INFO - Consumer mode: CPU
+2025-11-20 04:49:13 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:49:13 - __main__ - INFO - Camera Status:
+2025-11-20 04:49:13 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:49:13 - __main__ - INFO - Counting Status:
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 779 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 779 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 779 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:49:15 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:49:15 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:49:15 - __main__ - INFO -     Next log in: 778 seconds
+2025-11-20 04:49:15 - __main__ - INFO - ================================================================================
+2025-11-20 04:49:15 - consumer_cpu - INFO - Processed batch of 10 frames in 2.255s
+2025-11-20 04:49:17 - consumer_cpu - INFO - Processed batch of 10 frames in 2.151s
+2025-11-20 04:49:19 - consumer_cpu - INFO - Processed batch of 10 frames in 2.106s
+2025-11-20 04:49:21 - consumer_cpu - INFO - Processed batch of 10 frames in 2.208s
+2025-11-20 04:49:24 - consumer_cpu - INFO - Processed batch of 10 frames in 2.281s
+2025-11-20 04:49:26 - consumer_cpu - INFO - Processed batch of 10 frames in 2.240s
+2025-11-20 04:49:28 - consumer_cpu - INFO - Processed batch of 10 frames in 2.057s
+2025-11-20 04:49:30 - consumer_cpu - INFO - Processed batch of 10 frames in 2.189s
+2025-11-20 04:49:32 - consumer_cpu - INFO - Processed batch of 10 frames in 2.190s
+2025-11-20 04:49:35 - consumer_cpu - INFO - Processed batch of 10 frames in 2.300s
+2025-11-20 04:49:37 - consumer_cpu - INFO - Processed batch of 10 frames in 2.199s
+2025-11-20 04:49:39 - consumer_cpu - INFO - Processed batch of 10 frames in 2.285s
+2025-11-20 04:49:42 - consumer_cpu - INFO - Processed batch of 10 frames in 2.374s
+2025-11-20 04:49:44 - consumer_cpu - INFO - Processed batch of 10 frames in 2.361s
+2025-11-20 04:49:46 - consumer_cpu - INFO - Processed batch of 10 frames in 2.272s
+2025-11-20 04:49:49 - consumer_cpu - INFO - Processed batch of 10 frames in 2.347s
+2025-11-20 04:49:51 - consumer_cpu - INFO - Processed batch of 10 frames in 2.404s
+2025-11-20 04:49:53 - consumer_cpu - INFO - Processed batch of 10 frames in 2.342s
+2025-11-20 04:49:56 - consumer_cpu - INFO - Processed batch of 10 frames in 2.333s
+2025-11-20 04:49:58 - consumer_cpu - INFO - Processed batch of 10 frames in 2.306s
+2025-11-20 04:50:00 - consumer_cpu - INFO - Processed batch of 10 frames in 2.350s
+2025-11-20 04:50:03 - consumer_cpu - INFO - Processed batch of 10 frames in 2.272s
+2025-11-20 04:50:05 - consumer_cpu - INFO - Processed batch of 10 frames in 2.178s
+2025-11-20 04:50:07 - consumer_cpu - INFO - Processed batch of 10 frames in 2.358s
+2025-11-20 04:50:10 - consumer_cpu - INFO - Processed batch of 10 frames in 2.398s
+2025-11-20 04:50:12 - consumer_cpu - INFO - Processed batch of 10 frames in 2.293s
+2025-11-20 04:50:13 - __main__ - INFO - ================================================================================
+2025-11-20 04:50:13 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:50:13 - __main__ - INFO - Consumer mode: CPU
+2025-11-20 04:50:13 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:50:13 - __main__ - INFO - Camera Status:
+2025-11-20 04:50:13 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:50:13 - __main__ - INFO - Counting Status:
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 719 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 719 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 719 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 719 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 719 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 719 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 718 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 718 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 718 seconds
+2025-11-20 04:50:14 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:50:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:50:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:50:14 - __main__ - INFO -     Next log in: 718 seconds
+2025-11-20 04:50:14 - __main__ - INFO - ================================================================================
+2025-11-20 04:50:14 - consumer_cpu - INFO - Processed batch of 10 frames in 2.333s
+2025-11-20 04:50:17 - consumer_cpu - INFO - Processed batch of 10 frames in 2.347s
+2025-11-20 04:50:19 - consumer_cpu - INFO - Processed batch of 10 frames in 2.311s
+2025-11-20 04:50:21 - consumer_cpu - INFO - Processed batch of 10 frames in 2.381s
+2025-11-20 04:50:24 - consumer_cpu - INFO - Processed batch of 10 frames in 2.313s
+2025-11-20 04:50:26 - consumer_cpu - INFO - Processed batch of 10 frames in 2.387s
+2025-11-20 04:50:29 - consumer_cpu - INFO - Processed batch of 10 frames in 2.509s
+2025-11-20 04:50:31 - consumer_cpu - INFO - Processed batch of 10 frames in 2.410s
+2025-11-20 04:50:33 - consumer_cpu - INFO - Processed batch of 10 frames in 2.296s
+2025-11-20 04:50:36 - consumer_cpu - INFO - Processed batch of 10 frames in 2.341s
+2025-11-20 04:50:38 - consumer_cpu - INFO - Processed batch of 10 frames in 2.362s
+2025-11-20 04:50:40 - consumer_cpu - INFO - Processed batch of 10 frames in 2.262s
+2025-11-20 04:50:43 - consumer_cpu - INFO - Processed batch of 10 frames in 2.334s
+2025-11-20 04:50:45 - consumer_cpu - INFO - Processed batch of 10 frames in 2.246s
+2025-11-20 04:50:47 - consumer_cpu - INFO - Processed batch of 10 frames in 2.277s
+2025-11-20 04:50:49 - consumer_cpu - INFO - Processed batch of 10 frames in 2.172s
+2025-11-20 04:50:52 - consumer_cpu - INFO - Processed batch of 10 frames in 2.191s
+2025-11-20 04:50:54 - consumer_cpu - INFO - Processed batch of 10 frames in 2.272s
+2025-11-20 04:50:56 - consumer_cpu - INFO - Processed batch of 10 frames in 2.289s
+2025-11-20 04:50:58 - consumer_cpu - INFO - Processed batch of 10 frames in 2.328s
+2025-11-20 04:51:01 - consumer_cpu - INFO - Processed batch of 10 frames in 2.247s
+2025-11-20 04:51:03 - consumer_cpu - INFO - Processed batch of 10 frames in 2.297s
+2025-11-20 04:51:05 - consumer_cpu - INFO - Processed batch of 10 frames in 2.146s
+2025-11-20 04:51:07 - consumer_cpu - INFO - Processed batch of 10 frames in 2.227s
+2025-11-20 04:51:10 - consumer_cpu - INFO - Processed batch of 10 frames in 2.131s
+2025-11-20 04:51:12 - consumer_cpu - INFO - Processed batch of 10 frames in 2.166s
+2025-11-20 04:51:14 - __main__ - INFO - ================================================================================
+2025-11-20 04:51:14 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:51:14 - __main__ - INFO - Consumer mode: CPU
+2025-11-20 04:51:14 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:51:14 - __main__ - INFO - Camera Status:
+2025-11-20 04:51:14 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:51:14 - __main__ - INFO - Counting Status:
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 658 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:51:14 - __main__ - INFO -     person: IN=0, OUT=0
+2025-11-20 04:51:14 - __main__ - INFO -     Unique objects tracked: 0
+2025-11-20 04:51:14 - __main__ - INFO -     Next log in: 659 seconds
+2025-11-20 04:51:14 - __main__ - INFO - ================================================================================
+2025-11-20 04:51:14 - consumer_cpu - INFO - Processed batch of 10 frames in 2.201s
+2025-11-20 04:51:16 - consumer_cpu - INFO - Processed batch of 10 frames in 2.122s
+2025-11-20 04:51:18 - consumer_cpu - INFO - Processed batch of 10 frames in 2.280s
+2025-11-20 04:51:21 - consumer_cpu - INFO - Processed batch of 10 frames in 2.099s
+2025-11-20 04:51:23 - consumer_cpu - INFO - Processed batch of 10 frames in 2.222s
+2025-11-20 04:51:25 - consumer_cpu - INFO - Processed batch of 10 frames in 2.123s
+2025-11-20 04:51:27 - consumer_cpu - INFO - Processed batch of 10 frames in 2.043s
+2025-11-20 04:51:29 - consumer_cpu - INFO - Processed batch of 10 frames in 2.053s
+2025-11-20 04:51:31 - consumer_cpu - INFO - Processed batch of 10 frames in 2.154s
+2025-11-20 04:51:33 - consumer_cpu - INFO - Processed batch of 10 frames in 2.049s
+2025-11-20 04:51:35 - consumer_cpu - INFO - Processed batch of 10 frames in 2.113s
+2025-11-20 04:51:37 - consumer_cpu - INFO - Processed batch of 10 frames in 2.139s
+2025-11-20 04:51:40 - consumer_cpu - INFO - Processed batch of 10 frames in 2.165s
+2025-11-20 04:51:42 - consumer_cpu - INFO - Processed batch of 10 frames in 2.040s
+2025-11-20 04:51:44 - consumer_cpu - INFO - Processed batch of 10 frames in 1.977s
+2025-11-20 04:51:46 - consumer_cpu - INFO - Processed batch of 10 frames in 1.976s
+2025-11-20 04:51:48 - consumer_cpu - INFO - Processed batch of 10 frames in 2.075s
+2025-11-20 04:51:50 - consumer_cpu - INFO - Processed batch of 10 frames in 2.217s
+2025-11-20 04:51:52 - consumer_cpu - INFO - Processed batch of 10 frames in 2.240s
+2025-11-20 04:51:55 - consumer_cpu - INFO - Processed batch of 10 frames in 2.230s
+2025-11-20 04:51:57 - consumer_cpu - INFO - Processed batch of 10 frames in 2.169s
+2025-11-20 04:51:59 - consumer_cpu - INFO - Processed batch of 10 frames in 2.084s
+2025-11-20 04:52:01 - consumer_cpu - INFO - Processed batch of 10 frames in 2.099s
+2025-11-20 04:52:03 - consumer_cpu - INFO - Processed batch of 10 frames in 2.047s
+2025-11-20 04:52:05 - consumer_cpu - INFO - Processed batch of 10 frames in 1.992s
+2025-11-20 04:52:07 - consumer_cpu - INFO - Processed batch of 10 frames in 2.206s
+2025-11-20 04:52:09 - consumer_cpu - INFO - Processed batch of 10 frames in 2.072s
+2025-11-20 04:52:11 - consumer_cpu - INFO - Processed batch of 10 frames in 2.046s
+2025-11-20 04:52:13 - consumer_cpu - INFO - Processed batch of 10 frames in 2.039s
+2025-11-20 04:52:14 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:14 - __main__ - INFO - SYSTEM STATUS
+2025-11-20 04:52:14 - __main__ - INFO - Consumer mode: CPU
+2025-11-20 04:52:14 - __main__ - INFO - Frame queue size: 100
+2025-11-20 04:52:14 - __main__ - INFO - Camera Status:
+2025-11-20 04:52:14 - __main__ - INFO -   camera_1: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_2: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_4: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_6: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_8: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_10: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_5: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_9: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_3: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO -   camera_7: Connected | Thread: Running
+2025-11-20 04:52:14 - __main__ - INFO - Counting Status:
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 1 (camera_1):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 3
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 598 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 2 (camera_2):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 598 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 3 (camera_3):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 3
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 598 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 4 (camera_4):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 3
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 5 (camera_5):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 3
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 6 (camera_6):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 3
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 7 (camera_7):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 8 (camera_8):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 1
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 9 (camera_9):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 3
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO -   Camera 10 (camera_10):
+2025-11-20 04:52:15 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:52:15 - __main__ - INFO -     Unique objects tracked: 2
+2025-11-20 04:52:15 - __main__ - INFO -     Next log in: 597 seconds
+2025-11-20 04:52:15 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:15 - consumer_cpu - INFO - Processed batch of 10 frames in 2.005s
+2025-11-20 04:52:16 - __main__ - INFO - Signal 2 received. Stopping...
+2025-11-20 04:52:17 - __main__ - INFO - Pipeline stopping...
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 1 (camera_1)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 3 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 3
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 2 (camera_2)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 2 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 2
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 3 (camera_3)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 3 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 3
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 4 (camera_4)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 3 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 3
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 5 (camera_5)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 3 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 3
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 6 (camera_6)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 3 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 3
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 7 (camera_7)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.5 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 2 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 2
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 8 (camera_8)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.2 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 1 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 1
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=1, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 9 (camera_9)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.2 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 3 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 3
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=3, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - FINAL COUNT SUMMARY
+2025-11-20 04:52:17 - __main__ - INFO - Camera: Camera 10 (camera_10)
+2025-11-20 04:52:17 - __main__ - INFO -   Elapsed Time: 304.2 seconds
+2025-11-20 04:52:17 - __main__ - INFO -   Total IN: 2 | Total OUT: 0
+2025-11-20 04:52:17 - __main__ - INFO -   Net Count: 2
+2025-11-20 04:52:17 - __main__ - INFO -   Class-wise Counts:
+2025-11-20 04:52:17 - __main__ - INFO -     person: IN=2, OUT=0
+2025-11-20 04:52:17 - __main__ - INFO - ================================================================================
+2025-11-20 04:52:17 - __main__ - INFO - Consolidated count data saved to: ./count_logs/final_counts_20251120_045217.json
+2025-11-20 04:52:17 - consumer_cpu - INFO - Processed batch of 10 frames in 2.041s
+2025-11-20 04:52:20 - consumer_cpu - INFO - Processed batch of 0 frames in 2.113s
+2025-11-20 04:52:20 - consumer_cpu - INFO - Thread pool executor shutdown complete
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_2
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_6
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_4
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_1
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_7
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_8
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_10
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_9
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_3
+2025-11-20 04:52:20 - consumer_cpu - INFO - Closed video writer for camera: camera_5
+2025-11-20 04:52:20 - producer - INFO - camera_3: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_2: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_6: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_7: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_5: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_4: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_1: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_8: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_9: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - camera_10: Capture thread stopped
+2025-11-20 04:52:20 - producer - INFO - All cameras stopped
+2025-11-20 04:52:20 - __main__ - INFO - Pipeline stopped cleanly.
